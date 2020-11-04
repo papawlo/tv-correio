@@ -1,0 +1,176 @@
+.institutional {
+
+  .institutional-content {
+    background: #f7f7f7;
+    
+    .institutional-content-wrap {
+      padding: rem(85 0);
+      text-align: center;
+
+      .title {
+        margin-bottom: rem($space-vert);
+        letter-spacing: rem(-1);
+        font-family: 'Uni Sans Bold';
+        font-size: rem(56);
+      }
+
+      .phar {
+        line-height: rem(34);
+        font-size: rem(24);
+      }
+    }
+  }
+
+  .institutional-pannel {
+    margin-bottom: rem(80);
+    position: relative;
+    background: url('../img/pannel-institutional.jpg') top center repeat-x;
+    width: 100%;
+    height: rem(811);
+
+    .pannel-border {
+      position: absolute;
+      background: url('../img/footer-background.png');
+      width: 100%;
+      height: rem(1);
+
+      &.top {
+        top: 0;
+      }
+
+      &.bottom {
+        bottom: 0;
+      }
+    }
+
+    .pannel-wrap {
+      position: relative;
+      top: rem(-60);
+
+      .title {
+        text-align: center;
+        margin-bottom: rem(200);
+        letter-spacing: rem(-1);
+        font-family: 'Uni Sans Bold';
+        font-size: rem(56);
+      }
+
+      .content {
+        .hour {
+          @include pie-clearfix;
+          position: relative;
+          max-width: rem(420);
+          padding: rem(20 0);
+          border-top: rem(1) solid #959595;
+          border-bottom: rem(1) solid #959595;
+
+          .icon {
+            display: block;
+            position: absolute;
+            left: rem(160);
+          }
+
+          .label {
+            text-align: center;
+
+            .h, .l {
+              display: block;
+            }
+          }
+
+          .value {
+            padding-left: rem($space-horz - 10);
+            font-size: rem(24);
+          }
+
+          &.increase {
+            .icon {
+              @extend .sprites-hour-increase;
+              top: rem(-114);
+            }
+
+            .label {
+              text-transform: uppercase;
+              font-family: 'Uni Sans Bold';
+              color: #ec1c47;
+
+              .h {
+                font-size: rem(100);
+              }
+
+              .l {
+                font-size: rem(34);
+              }
+            }
+
+            .value {
+              position: relative;
+              top: rem(5);
+
+              b {
+                color: #ec1c47;
+              }
+            }
+          }
+
+          &.decrease {
+            .icon {
+              @extend .sprites-hour-decrease;
+              bottom: rem(-114);
+            }
+
+            .label {
+              text-transform: uppercase;
+              font-family: 'Uni Sans Bold';
+
+              .h {
+                font-size: rem(66);
+              }
+
+              .l {
+                font-size: rem(22);
+              }
+            }
+
+            .value {
+              position: relative;
+              top: rem(3);
+            }
+          }
+        }
+
+        .icon {
+          padding: rem(0 65);
+          width: rem(164);
+
+          .icon-wrap {
+            width: rem(164);
+            height: rem(164);
+
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .instituional-map {
+    margin-bottom: rem(80);
+
+    .title {
+      margin-bottom: 2.1875rem;
+      letter-spacing: -0.0625rem; 
+      font-family: 'Uni Sans Bold'; 
+      font-size: 3.5rem;  
+      text-align:center;    
+    }
+  }
+  
+  .instituional-programs {
+    background: #f7f7f7;
+    padding: rem(80 0);
+  }
+}

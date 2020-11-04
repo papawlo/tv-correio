@@ -1,0 +1,63 @@
+.contact {
+  .contact-content {
+    padding: rem(30 0);
+
+    .title {
+      padding: rem(0 15);
+      margin-bottom: rem(30);
+      text-transform: uppercase;
+      line-height: rem(31);
+      font-family: 'Uni Sans Light';
+      font-size: rem(26);
+    }
+
+    .contact-form {
+      padding: rem(0 15);
+      margin-bottom: rem(30);
+      width: 100%;
+    }
+
+    .contact-map {
+      width: 100%;
+
+      .map {
+        margin-bottom: rem(30);
+        width: 100%;
+        height: rem(407);
+
+        iframe {
+          display: block;
+          width: 100%;
+          max-width: 100%;
+          height: rem(407);
+        }
+      }
+
+      .info {
+        padding: rem(0 15);
+        margin-bottom: rem(20);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .icon {
+          width: rem(50);
+          height: auto;
+
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .description {
+          padding-left: rem(15);
+          line-height: rem(21);
+          font-size: rem(18);
+        }
+      }
+    }
+  }
+}

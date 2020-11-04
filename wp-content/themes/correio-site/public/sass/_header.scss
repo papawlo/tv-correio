@@ -1,0 +1,219 @@
+.header {
+  position: relative;
+  background: url('../img/footer-background.png') bottom center repeat-x;
+
+  .header-ad {
+    border-bottom: rem(1) solid #e1e1e1;
+    padding: rem(17 0);
+    background: #fafafa;
+
+    .header-ad-970 {
+      @extend .center;
+      width: rem(970);
+
+      .label {
+        margin-bottom: rem(3);
+        letter-spacing: rem(1);
+        text-transform: uppercase;
+        font-size: rem(10);
+        color: #aaa;
+      }
+    }
+  }
+
+  .header-content {
+    display: table;
+    padding: rem(10 0);
+
+    .header-logo {
+      width: rem(102);
+      padding-right: rem(30);
+
+      .link {
+        @extend .sprites-correio-logo-header;
+        display: block;
+        text-indent: rem(-9999);
+      }
+    }
+
+    .header-menu {
+      .header-menu-list {
+        .header-menu-item {
+          display: inline-block;
+          margin-right: rem(20);
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .link {
+            display: block;
+            text-transform: uppercase;
+            font-size: rem(14);
+            color: #666;
+
+            &:hover, &.active {
+              color: #ec1c47;
+            }
+          }
+        }
+      }
+    }
+
+    .header-social {
+      .header-social-list {
+        .header-social-item {
+          display: inline-block;
+          margin-right: 0.2rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .link {
+            &.facebook,
+            &.twitter,
+            &.youtube {
+              display: block;
+              text-indent: rem(-9999);
+            }
+            
+            &.facebook {
+              @extend .sprites-social-header-facebook;
+            }
+            
+            &.twitter {
+              @extend .sprites-social-header-twitter;
+            }
+            
+            &.youtube {
+              @extend .sprites-social-header-youtube;
+            }
+          }
+        }
+      }
+    }
+
+    .header-search-button {
+      width: rem(29);
+      padding-left: 1.2rem;
+
+      .button {
+        background-color: transparent;
+        cursor: pointer;
+        @extend .sprites-search-button;
+        display: block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        text-indent: rem(-9999);
+      }
+    }
+
+    .header-partner {
+      width: rem(65);
+      padding-left: rem(50);
+      text-align: center;
+
+      .label {
+        margin-bottom: rem(7);
+        letter-spacing: rem(1);
+        text-transform: uppercase;
+        font-size: rem(12);
+        color: #5d5d5d; 
+      }
+
+      .icon {
+        @extend .sprites-record-logo-header;
+        display: block;
+        text-indent: rem(-9999);
+      }
+    }    
+  }
+
+  .header-search {
+    z-index: 101;
+    display: none;
+    position: absolute;
+    background: #f1f1f1;
+    width: 100%;
+    height: rem(99);
+
+    &.active {
+      display: block;
+    }
+
+    .form {
+      width: 100%;
+      height: 100%;
+
+      .icon-wrap {
+        width: rem(50);
+        padding-right: rem(25);
+
+        .icon {
+          display: block;
+          @extend .sprites-search-form-icon;
+        }
+      }
+
+      .input-wrap {
+        .input {
+          background: transparent;
+          border: none;
+          padding: rem(0 40);
+          width: 100%;
+          height: rem(57);
+          //border-left: rem(1) solid #666;
+          font-family: 'Uni Sans Light';
+          font-size: rem(36);
+          color: #666;
+        }
+      }
+
+      .close-wrap {
+        width: rem(40);
+
+        .close {
+          background-color: transparent;
+          @extend .sprites-search-form-close;
+          cursor: pointer;
+          display: block;
+          margin: 0;
+          padding: 0;
+          text-indent: rem(-9999);
+          border: none;
+        }
+      }
+    }
+  }
+
+  .header-programs {
+    display: none;
+    z-index: 999;
+    width: 100%;
+    padding: rem(35 0);
+    position: absolute;
+    background: #fafafa;
+
+    .lt-programs-widget {
+      .lt-programs-slides {
+        .lt-programs-slides-nav {
+          &:before {
+            background-color: #fafafa;
+          }
+        }
+      }
+    }
+
+    &.active {
+      display: block;
+    }
+  }
+
+}
+
+.color-bar {    
+ background: url("../img/footer-background.png") bottom center repeat-x;    
+    height: 1px;    
+}

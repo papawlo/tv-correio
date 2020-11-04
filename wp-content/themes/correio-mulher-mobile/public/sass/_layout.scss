@@ -1,0 +1,1030 @@
+// Wrapper scope
+.wrapper {
+  @extend .center;
+
+  .section {
+    @extend .clearfix;
+    margin-bottom: rem($space-vert);
+  }
+
+  .content {
+    margin-bottom: rem(30);
+  }
+}
+
+// Default style of widgets title in wrapper, content or sidebar scopes
+.lt-widget-title-wrap {
+  @include background-image(linear-gradient(to top, #e5e5e5, #f1f1f1));
+  @include box-shadow(rem(0 5 10 -5) rgba(0, 0, 0, 0.05));
+  padding: rem(20 15);
+  margin-bottom: rem(15);
+
+  .lt-widget-title-wrap-select {
+    @include appearance(none);
+    float: right;
+    background: none;
+    background-color: #e1e0e0 !important;
+    border: rem(1) solid #cfcfcf;
+    text-transform: uppercase;
+    font-family: 'Uni Sans Book';
+    font-size: rem(14);
+  }
+}
+
+.lt-widget-title {
+  text-transform: uppercase;
+  font-family: 'Uni Sans Light';
+  font-size: rem(20);
+}
+
+// Default style of load more links
+.lt-load-more-link {
+  @extend .center;
+  @include border-radius(rem(9999));
+  display: block;
+  padding: rem(15 0);
+  border: rem(1) solid #edecec;
+  background: #f5f5f5;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Uni Sans Semibold';
+  font-size: rem(14);
+  color: #aaa;
+
+  .icon {
+    display: inline-block;
+    margin-right: rem(3);
+
+    img {
+      display: block;
+      width: rem(12);
+      height: rem(12);
+    }
+  }
+}
+
+// Default style for go back links
+.lt-go-back-link {
+  @extend .center;
+  @include border-radius(rem(9999));
+  display: block;
+  padding: rem(15 0);
+  border: rem(1) solid #edecec;
+  background: #f5f5f5;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Uni Sans Semibold';
+  font-size: rem(14);
+  color: #aaa;
+
+  .icon {
+    position: relative;
+    top: rem(3);
+    display: inline-block;
+    margin-right: rem(3);
+    width: rem(10);
+    height: rem(20);
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Default banner
+.lt-default-banner {
+  background: url('../img/banner-default.jpg') top center repeat-x;
+  width: 100%;
+  height: rem(371);
+  text-align: center;
+
+  .icon {
+    @include border-radius(rem(9999));
+    margin-bottom: rem(30);
+    display: inline-block;
+    background: #ffffff;
+    width: rem(146);
+    height: rem(146);
+
+    .v-middle {
+      position: relative;
+      top: rem(-5);
+    }
+  }
+
+  .title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Uni Sans Light';
+    font-size: rem(30);
+    color: #fff;
+
+    strong, b {
+      font-family: 'Uni Sans Semibold';
+    }
+  }
+}
+
+.lt-form {
+  .lt-form-row {
+    margin-bottom: rem(20);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .lt-form-label {
+      display: block;
+      margin-bottom: rem(5);
+      text-transform: uppercase;
+      letter-spacing: rem(0);
+      font-family: 'Uni Sans Semibold';
+      font-size: rem(14);
+      color: #aaa;
+    }
+
+    .lt-form-input {
+      @include border-radius(rem(8));
+      display: block;
+      background: #fafafa;
+      border: rem(1) solid #e5e4e4;
+      width: 100%;
+      padding: rem(10 14);
+      font-family: 'Uni Sans Light';
+      font-size: rem(16);
+      color: #aaa;
+    }
+
+    .lt-form-textarea {
+      @extend .lt-form-input;
+      min-height: rem(220);
+      -moz-resize: vertical;
+      resize: vertical;
+    }
+
+    .lt-form-select {
+      position: relative;
+      width: 100%;
+      height: rem(38);
+
+      .current, .list {
+        position: absolute;
+      }
+
+      &.active {
+        .current {
+          @include border-radius(rem(8 8 0 0));
+          .icon-wrap {
+            .icon {
+              @extend .sprites-select-arrow-active;
+            }
+          }
+        }
+
+        .list {
+          display: block;
+        }
+      }
+
+      .current {
+        @extend .lt-form-input;
+        z-index: 1;
+
+        .icon-wrap {
+          cursor: pointer;
+          padding: rem(0 9);
+          border-left: rem(1) solid #e5e4e4;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+
+          .icon {
+            @extend .sprites-form-select-arrow;
+            display: block;
+          }
+        }
+      }
+
+      .list {
+        @include border-radius(rem(0 0 8 8));
+        display: none;
+        width: 100%;
+        top: rem(38);
+        border: rem(1) solid #e5e4e4;
+        border-top: none;
+        background: #fafafa;
+
+        .item {
+          @extend .lt-form-input;
+          @include border-radius(0);
+          border: none;
+          border-bottom: rem(1) solid #e5e4e4;
+          cursor: pointer;
+          color: #aaa;
+
+          a {
+            color: #aaa;
+          }
+
+          &:last-child {
+            border: none;
+            @include border-radius(rem(0 0 8 8));
+          }
+
+          &:hover {
+            background: #FAFAE7;
+          }
+        }
+      }
+    }
+
+    .lt-form-submit {
+      float: right;
+      @include border-radius(rem(9999));
+      @include box-shadow(rem(1 1 1) #e5e5e5);
+      margin: 0;
+      display: block;
+      cursor: pointer;
+      padding: rem(10 50);
+      border: none;
+      text-transform: uppercase;
+      font-size: rem(14);
+      background: #fafafa;
+      color: #aaa;
+    }
+  }
+}
+
+// Default style for labels
+.lt-headline-label {
+  display: inline-block;
+  @include border-radius(rem(4444));
+  width: auto;
+  max-width: 80%;
+  margin-bottom: rem(8);
+  padding: rem(5 8);
+  letter-spacing: rem(1);
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Uni Sans Light';
+  font-size: rem(12);
+  color: #fff;
+}
+
+// Default style for top stories
+.lt-top-stories {
+  padding: rem(0 15);
+  margin-bottom: rem(30);
+
+  .lt-top-stories-title {
+    margin: rem(0 -15 15 -15);
+  }
+
+  .lt-top-stories-content {
+    margin: rem(0 -15);
+    margin-bottom: rem(30);
+
+    .lt-top-stories-list {
+      .lt-top-stories-item {
+        padding-bottom: rem(20);
+        margin-bottom: rem(20);
+        border-bottom: rem(1) solid #ddd;
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+
+        .storie {
+          padding: rem(0 15);
+
+          .thumb {
+            display: block;
+            margin-bottom: rem(15);
+            width: 100%;
+            height: auto;
+            position: relative;
+
+            figure, img {
+              @include border-radius(rem(8));
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .link {
+            .title {
+              clear: left;
+              letter-spacing: rem(0);
+              font-family: 'Uni Sans Semibold';
+              font-size: rem(18);
+              color: #aaa;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Default style for top videos
+.lt-top-videos {
+  padding: rem(0 15);
+  margin-bottom: rem(30);
+
+  .lt-top-videos-title {
+    margin: rem(0 -15 15 -15);
+  }
+
+  .lt-top-videos-content {
+    margin-bottom: rem(30);
+
+    .lt-top-videos-main {
+      margin-bottom: rem(20);
+
+      .video {
+        width: 100%;
+
+        .thumb {
+          position: relative;
+          display: block;
+          margin-bottom: rem(5);
+          width: 100%;
+          height: auto;
+
+          .icon {
+            @include opacity(0.8);
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            margin-top: rem(-47);
+            margin-left: rem(-47);
+            width: rem(94);
+            height: rem(94);
+
+            img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .image {
+            position: relative;
+            z-index: 0;
+            display: block;
+            width: 100%;
+            height: auto;
+
+            img {
+              @include border-radius(rem(8 8 0 0));
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+
+        .info {
+          @include border-radius(rem(0 0 8 8));
+          background: #f1f1f1;
+          border-bottom-width: rem(3);
+          border-bottom-style: solid;
+          padding: rem(15);
+
+          .link {
+            //display: block;
+
+            .title {
+              clear: left;
+              letter-spacing: rem(0);
+              font-family: 'Uni Sans Semibold';
+              font-size: rem(18);
+              color: #aaa;
+            }
+          }
+        }
+      }
+    }
+
+    .lt-top-videos-list {
+      .lt-top-videos-item {
+        margin-bottom: rem(20);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .video {
+          .thumb {
+            position: relative;
+            margin-right: rem(5);
+            padding-right: rem(5);
+            width: rem(129);
+            height: auto;
+
+            .icon {
+              @include opacity(0.8);
+              position: absolute;
+              z-index: 1;
+              top: 50%;
+              left: 50%;
+              margin-top: rem(-30);
+              margin-left: rem(-30);
+              width: rem(60);
+              height: rem(60);
+
+              img {
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+            }
+
+            .image {
+              position: relative;
+              z-index: 0;
+              display: block;
+              width: 100%;
+              height: auto;
+
+              img {
+                @include border-radius(rem(8 0 0 8));
+                display: block;
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+
+          .info {
+            @include border-radius(rem(0 8 8 0));
+            background: #f1f1f1;
+            padding: rem(15);
+            border-bottom-width: rem(2);
+            border-bottom-style: solid;
+
+            .link {
+              display: block;
+
+              .title {
+                clear: left;
+                letter-spacing: rem(1);
+                line-height: rem(17);
+                font-family: 'Uni Sans Book';
+                font-size: rem(12);
+                color: #aaa;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Default style for top receitas
+.lt-top-receitas {
+  margin-bottom: rem(30);
+
+  .lt-top-receitas-content {
+    margin-bottom: rem(30);
+    padding: rem(0 15);
+
+    .lt-top-receitas-main,
+    .lt-top-receitas-list {
+      .receita {
+        .thumb {
+          display: block;
+
+          .image { // figure
+            display: block;
+
+            img {
+              display: block;
+            }
+          }
+        }
+
+        .info {
+          background: #f1f1f1;
+          border-bottom-style: solid;
+
+          .link {
+            .lt-headline-label {
+              margin-bottom: rem(10);
+            }
+
+            .title {
+              color: #aaa;
+            }
+          }
+        }
+      }
+    }
+
+    .lt-top-receitas-main {
+      margin-bottom: rem(20);
+
+      .receita {
+        .thumb {
+          margin-bottom: rem(5);
+          width: 100%;;
+          height: auto;
+
+          .image {
+            display: block;
+            width: 100%;
+            height: auto;
+
+            img {
+              @include border-radius(rem(5 5 0 0));
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+
+        .info {
+          @include border-radius(rem(0 0 5 5));
+          border-bottom-width: rem(3);
+          padding: rem(15);
+
+          .link {
+            .title {
+              letter-spacing: rem(1);
+              line-height: rem(23);
+              font-family: 'Uni Sans Semibold';
+              font-size: rem(18);
+            }
+          }
+        }
+      }
+    }
+
+    .lt-top-receitas-list {
+      .lt-top-receitas-item {
+        margin-bottom: rem(20);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .receita {
+          .thumb {
+            padding-right: rem(5);
+            width: rem(134);
+            height: auto;
+
+            .image {
+              display: block;
+
+              img {
+                display: block;
+                @include border-radius(rem(5 0 0 5));
+              }
+            }
+          }
+
+          .info {
+            @include border-radius(rem(0 5 5 0));
+            padding: rem(5);
+            border-bottom-width: rem(2);
+
+            .link {
+              .title {
+                letter-spacing: rem(1);
+                line-height: rem(19);
+                font-family: 'Uni Sans Semibold';
+                font-size: rem(14);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.lt-map {
+  
+  .lt-map-content {
+    margin-bottom: rem($space-vert);
+
+    .map-image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .lt-map-info {
+    .lt-map-info-row {
+      @include pie-clearfix;
+      margin-bottom: rem(30);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .icon, .info-wrapper {
+        float: left;
+      }
+
+      .icon {
+        @include border-radius(rem(9999));
+        display: block;
+        margin-right: rem(20);
+        width: rem(33);
+        height: rem(33);
+        background: #aaa;
+      }
+
+      .info-wrapper {
+        width: 95%;
+        text-transform: uppercase;
+
+        .description {
+          position: relative;
+          top: rem(8);
+          font-size: rem(18);
+        }
+
+        .table {
+          width: 100%;
+
+          .table-head {
+            .table-head-line {
+              .table-head-column {
+                border-top: rem(1) solid #eb1d47;
+                border-bottom: rem(1) solid #eb1d47;
+                padding: rem(10);
+                font-size: rem(18);
+                color: #aaa;
+
+                &:nth-child(odd) {
+                  background: #f9f9f9;
+                }
+
+                &.a {
+                  width: 27%;
+                }
+
+                &.b {
+                  width: 15%;
+                }
+              }
+            }
+          }
+          .table-body {
+            .table-body-line {
+              &:first-child {
+                .table-body-column {
+                  padding-top: rem(10);
+                }
+              }
+
+              &:last-child {
+                .table-body-column {
+                  padding-bottom: rem(10);
+                  border-bottom: rem(1) solid #eb1d47;
+                }
+              }
+
+              .table-body-column {
+                border-right: rem(1) solid #eb1d47;
+                padding: rem(3 10);
+                font-size: rem(14);
+
+                &:last-child {
+                  border-right: none;
+                }                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.lt-padding-content {
+  padding: rem(0 15);
+}
+
+.lt-post {
+  margin-bottom: rem(30);
+  padding: rem(0 15);
+  letter-spacing: rem(0);
+  line-height: rem(21);
+  font-size: rem(16);
+  color: #666;
+
+  .lt-post-head {
+    margin-bottom: rem(30);
+
+    .time {
+      display: block;
+      margin-bottom: rem(30);
+
+      .icon {
+        padding-right: rem(15);
+        width: rem(31);
+        height: rem(31);
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .title {
+      margin-bottom: rem(15);
+      text-transform: uppercase;
+      line-height: rem(31);
+      font-size: rem(24);
+    }
+
+    .subtitle {
+      margin-bottom: rem(30);
+      line-height: rem(21);
+      font-size: rem(18);
+    }
+
+    .share {
+      margin: rem(0 -15);
+      border-top: rem(1) solid #ddd;
+      border-bottom: rem(1) solid #ddd;
+      padding: rem(10 15);
+
+      .list {
+        width: rem(140);
+
+        .item {
+          float: left;
+          margin-right: rem(15);
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .link {
+            display: block;
+
+            .icon {
+              @include border-radius(rem(9999));
+              display: block;
+              text-align: center;
+              border: rem(3) solid #cdcdcd;
+              width: rem(35);
+              height: rem(35);
+
+              &.facebook,
+              &.twitter,
+              &.whatsapp {
+                display: inline-block;
+
+                img {
+                  position: relative;
+                }
+              }
+              
+              &.facebook {
+                img {
+                  top: rem(5);
+                  width: rem(8);
+                  height: rem(18);
+                }
+              }
+
+              &.twitter {
+                img {
+                  top: rem(6);
+                  width: rem(18);
+                  height: rem(15);
+                }
+              }
+
+              &.whatsapp {
+                img {
+                  top: rem(4);
+                  width: rem(19);
+                  height: rem(19);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .author {
+        padding-left: rem(15);
+        font-size: rem(18);
+      }
+    }
+  }
+
+  .lt-post-body {
+    p, ul, ol {
+      margin-bottom: rem(30);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    // Lists
+    ul, ol {
+      margin-left: rem(30);
+    }
+
+    ul {
+      list-style: disc;
+    }
+
+    ol {
+      list-style: decimal;
+    }
+
+    // Images
+    img {
+      @include border-radius(rem(8));
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// Style for programs slides widget in wrapper scope
+.lt-programs-widget {
+  width: 100%;
+  margin-bottom: rem(30);
+
+  .lt-programs-slides {
+    @extend .clearfix;
+    @extend .center;
+    width: rem(291);
+    
+    .lt-programs-slides-nav {
+      @include border-radius(rem(9999));
+      cursor: pointer;
+      position: relative;
+      top: rem(38);
+      float: left;
+      width: rem(148);
+      height: rem(96);
+      background: #f1f1f1;
+      display: block;
+      margin: 0;
+      padding: 0;
+      border: none;
+
+      &:hover {
+        background: #cdcdcd;
+      }
+
+      .icon {
+        display: block;
+        width: rem(19);
+        height: rem(40);
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &.lt-programs-slides-prev {
+        margin-right: rem(-87);
+
+        .icon {
+          float: left;
+          position: relative;
+          left: rem(27);
+        }
+      }
+
+      &.lt-programs-slides-next {
+        margin-left: rem(-87);
+
+        .icon {
+          float: right;
+          position: relative;
+          right: rem(27);
+        }
+      }
+    }
+
+    .lt-programs-slides-wrap {
+      float: left;
+      width: rem(169);
+      height: rem(206);
+      overflow: hidden;
+      
+      &.lt-programs-slides-wrap-o {
+        height: rem(169);
+      }
+
+      .lt-programs-slides-list {
+        @extend .clearfix;
+        position: relative;
+        height: rem(206);
+      
+        &.lt-programs-slides-list-o {
+          height: rem(169);
+        }
+
+        .lt-programs-slides-item {
+          float: left;
+          margin-right: rem($space-horz);
+          width: rem(169);
+          height: rem(206);
+          
+          &.lt-programs-slides-item-o {
+            height: rem(169);
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .lt-programs-slides-link {
+            display: block;
+            width: rem(169);
+            height: rem(206);
+
+            .program {
+              position: relative;
+              width: rem(169);
+              height: rem(206);
+
+              &.program-o {
+                height: rem(169);
+              }
+
+              .border,
+              .border-o,
+              .logo,
+              .thumb {
+                position: absolute;
+              }
+
+              .border,
+              .border-o {
+                @include border-radius(rem(9999));
+                z-index: 3;
+                border-width: rem(1);
+                border-style: solid;
+                border-color: #666;
+              }
+
+              .border {
+                width: rem(86);
+                height: rem(86);
+                left: rem(42);
+                bottom: rem(5);
+              }
+
+              .border-o {
+                width: rem(159);
+                height: rem(159);
+                top: rem(5);
+                left: rem(5);
+              }
+
+              .logo {
+                @include border-radius(rem(9999));
+                display: block;
+                background: #fff;
+                z-index: 2;
+                left: rem(37);
+                bottom: 0;
+                border: rem(3) solid #eae9e9;
+              }
+
+              .thumb {
+                @include border-radius(rem(9999));
+                display: block;
+                background: #fff;
+                z-index: 1;
+                border: rem(3) solid #eae9e9;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,168 @@
+.programation {
+  padding-top: 4.375rem;
+
+  .programation-content {
+    width: rem(700);
+    padding-top: 4.375rem;
+
+    .programation-head {
+      padding-bottom: rem(30);
+      border-bottom: rem(1) solid #ddd;
+      margin-bottom: rem(30);
+
+      .programation-title {
+        text-transform: uppercase;
+        font-family: 'Uni Sans Light';
+        font-size: rem(32);
+      }
+
+      .programation-time {
+        text-transform: uppercase;
+        font-family: 'Uni Sans Light';
+        font-size: rem(24);
+
+        b {
+          text-transform: capitalize;
+          font-family: 'Uni Sans Semibold';
+          font-size: rem(30);
+        }
+      }
+
+      .v-nav {
+        width: rem(48 + 48);
+      }
+
+      .programation-nav {
+        width: rem(48 + 48);
+
+        .programation-nav-link {
+          float: left;
+          display: block;
+          width: rem(48);
+          height: rem(40);
+
+          .icon {
+            @extend .center;
+            position: relative;
+            top: rem(10);
+            display: block;
+          }
+
+          &.prev {
+            @include background-image(linear-gradient(to left, #e3e3e3, #ededed));
+            @include border-radius(rem(9999 0 0 9999));
+
+            .icon {
+              @extend .sprites-programation-nav-left;
+            }
+
+            &:hover {
+              @include background-image(linear-gradient(to left, #d4d4d4 30%, #ededed));
+            }
+          }
+
+          &.next {
+            @include background-image(linear-gradient(to right, #e3e3e3, #ededed));
+            @include border-radius(rem(0 9999 9999 0));
+            
+            .icon {
+              @extend .sprites-programation-nav-right;
+            }
+
+            &:hover {
+              @include background-image(linear-gradient(to right, #d4d4d4 30%, #ededed));
+            }
+          }
+        }
+      }
+    }
+
+    .programation-body {
+      .program {
+        border-bottom: rem(1) solid #ddd;
+        margin-bottom: rem(30);
+        padding-bottom: rem(30);
+
+        .v-logo {
+          position: relative;
+          z-index: 1;
+          width: rem(93);
+        }
+
+        .program-logo {
+          @include border-radius(rem(9999));
+          position: relative;
+          display: block;
+          border: rem(3) solid #eae9e9;
+          width: rem(93);
+          height: rem(93);
+
+          .border, img {
+            position: absolute;
+          }
+
+          .border {
+            @include border-radius(rem(9999));
+            z-index: 1;
+            top: rem(2);
+            left: rem(2);
+            border-width: rem(1);
+            border-style: solid;
+            border-color: #666;
+            width: rem(83);
+            height: rem(83);
+          }
+
+          img {
+            display: block;
+            z-index: 0;
+            @include border-radius(rem(9999));
+            width: rem(87);
+            height: rem(87);
+          }
+        }
+
+        .v-thumb {
+          z-index: 0;
+          position: relative;
+          left: rem(-35);
+          width: rem(245);
+        }
+
+        .program-thumb {
+          display: block;
+          @include border-radius(rem(8));
+          width: rem(245);
+          height: rem(154);
+
+          img {
+            display: block;
+            width: inherit;
+            height: inherit;
+            @include border-radius(inherit);
+          }
+        }
+
+        .v-link {
+          position: relative;
+          left: rem(-5);
+        }
+
+        .program-link {
+          display: block;
+
+          .program-label {
+            font-size: rem(26);
+          }
+
+          .program-title {
+            text-transform: uppercase;
+            font-family: 'Uni Sans Light';
+            font-size: rem(48);
+            color: #48484e;
+          }
+        }
+      }
+    }
+  }
+}

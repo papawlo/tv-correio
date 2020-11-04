@@ -1,0 +1,83 @@
+.footer {
+  @include background-image(linear-gradient(to top, #f6f6f6, #fff));
+  margin-top: rem(30);
+
+  .border {
+    background: url('../img/footer-background.png') top center repeat-x;
+    display: block;
+    width: 100%;
+    height: rem(1);
+  }
+
+  .footer-sidebar {
+    padding: rem(30 0);
+
+    .footer-logo {
+      margin-bottom: rem(50);
+
+      .footer-logo-list {
+        text-align: center;
+
+        .footer-logo-item {
+          display: inline-block;
+          margin-right: rem(20);
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .link {
+            display: block;
+
+            img {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-menu {
+      letter-spacing: rem(1);
+      text-align: center;
+      font-size: rem(14);
+
+      .footer-nav {
+        .footer-list {
+          .footer-item {
+            margin-bottom: rem(30);
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .link {
+              text-transform: uppercase;
+              color: #666;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .info-site {
+    position: relative;
+    display: block;
+    clear: both;
+    width: 100%;
+    margin: rem(1 0);
+    padding: rem(25 0 0 0);
+    text-align: center;   
+
+    .icon-site {
+      @extend .sprites-qualitare;
+      display: inline-block;
+      position: relative;
+      bottom: 0;
+      right: 0;
+      text-decoration: none;
+    }
+  } 
+
+}

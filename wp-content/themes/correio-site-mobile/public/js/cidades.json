@@ -1,0 +1,894 @@
+{
+  "2500106": {
+    "name": "Água Branca",
+    "population": "9.449"
+  },
+  "2500205": {
+    "name": "Aguiar",
+    "population": "5.530"
+  },
+  "2500304": {
+    "name": "Alagoa Grande",
+    "population": "28.479"
+  },
+  "2500403": {
+    "name": "Alagoa Nova",
+    "population": "19.681"
+  },
+  "2500502": {
+    "name": "Alagoinha",
+    "population": "13.576"
+  },
+  "2500536": {
+    "name": "Alcantil",
+    "population": "5.239"
+  },
+  "2500577": {
+    "name": "Algodão de Jandaíra",
+    "population": "2.366"
+  },
+  "2500601": {
+    "name": "Alhandra",
+    "population": "18.007"
+  },
+  "2500734": {
+    "name": "Amparo",
+    "population": "2.088"
+  },
+  "2500775": {
+    "name": "Aparecida",
+    "population": "7.676"
+  },
+  "2500809": {
+    "name": "Araçagi",
+    "population": "17.224"
+  },
+  "2500908": {
+    "name": "Arara",
+    "population": "12.653"
+  },
+  "2501005": {
+    "name": "Araruna",
+    "population": "18.879"
+  },
+  "2501104": {
+    "name": "Areia",
+    "population": "23.829"
+  },
+  "2501153": {
+    "name": "Areia de Baraúnas",
+    "population": "1.927"
+  },
+  "2501203": {
+    "name": "Areial",
+    "population": "6.470"
+  },
+  "2501302": {
+    "name": "Aroeiras",
+    "population": "19.082"
+  },
+  "2501351": {
+    "name": "Assunção",
+    "population": "3.522"
+  },
+  "2501401": {
+    "name": "Baía da Traição",
+    "population": "8.012"
+  },
+  "2501500": {
+    "name": "Bananeiras",
+    "population": "21.851"
+  },
+  "2501534": {
+    "name": "Baraúna",
+    "population": "4.220"
+  },
+  "2501609": {
+    "name": "Barra de Santa Rosa",
+    "population": "14.157"
+  },
+  "2501575": {
+    "name": "Barra de Santana",
+    "population": "8.206"
+  },
+  "2501708": {
+    "name": "Barra de São Miguel",
+    "population": "5.611"
+  },
+  "2501807": {
+    "name": "Bayeux",
+    "population": "99.716"
+  },
+  "2501906": {
+    "name": "Belém",
+    "population": "17.093"
+  },
+  "2502003": {
+    "name": "Belém do Brejo do Cruz",
+    "population": "7.143"
+  },
+  "2502052": {
+    "name": "Bernardino Batista",
+    "population": "3.075"
+  },
+  "2502102": {
+    "name": "Boa Ventura",
+    "population": "5.751"
+  },
+  "2502151": {
+    "name": "Boa Vista",
+    "population": "6.227"
+  },
+  "2502201": {
+    "name": "Bom Jesus",
+    "population": "2.400"
+  },
+  "2502300": {
+    "name": "Bom Sucesso",
+    "population": "5.035"
+  },
+  "2502409": {
+    "name": "Bonito de Santa Fé",
+    "population": "10.804"
+  },
+  "2502508": {
+    "name": "Boqueirão",
+    "population": "16.888"
+  },
+  "2502706": {
+    "name": "Borborema",
+    "population": "5.111"
+  },
+  "2502805": {
+    "name": "Brejo do Cruz",
+    "population": "13.123"
+  },
+  "2502904": {
+    "name": "Brejo dos Santos",
+    "population": "6.198"
+  },
+  "2503001": {
+    "name": "Caaporã",
+    "population": "20.362"
+  },
+  "2503100": {
+    "name": "Cabaceiras",
+    "population": "5.035"
+  },
+  "2503209": {
+    "name": "Cabedelo",
+    "population": "57.944"
+  },
+  "2503308": {
+    "name": "Cachoeira dos Índios",
+    "population": "9.546"
+  },
+  "2503407": {
+    "name": "Cacimba de Areia",
+    "population": "3.557"
+  },
+  "2503506": {
+    "name": "Cacimba de Dentro",
+    "population": "16.748"
+  },
+  "2503555": {
+    "name": "Cacimbas",
+    "population": "6.814"
+  },
+  "2503605": {
+    "name": "Caiçara",
+    "population": "7.220"
+  },
+  "2503704": {
+    "name": "Cajazeiras",
+    "population": "58.446"
+  },
+  "2503753": {
+    "name": "Cajazeirinhas",
+    "population": "3.033"
+  },
+  "2503803": {
+    "name": "Caldas Brandão",
+    "population": "5.637"
+  },
+  "2503902": {
+    "name": "Camalaú",
+    "population": "5.749"
+  },
+  "2504009": {
+    "name": "Campina Grande",
+    "population": "385.213"
+  },
+  "2504033": {
+    "name": "Capim",
+    "population": "5.601"
+  },
+  "2504074": {
+    "name": "Caraúbas",
+    "population": "3.899"
+  },
+  "2504108": {
+    "name": "Carrapateira",
+    "population": "2.378"
+  },
+  "2504157": {
+    "name": "Casserengue",
+    "population": "7.058"
+  },
+  "2504207": {
+    "name": "Catingueira",
+    "population": "4.812"
+  },
+  "2504306": {
+    "name": "Catolé do Rocha",
+    "population": "28.759"
+  },
+  "2504355": {
+    "name": "Caturité",
+    "population": "4.543"
+  },
+  "2504405": {
+    "name": "Conceição",
+    "population": "18.363"
+  },
+  "2504504": {
+    "name": "Condado",
+    "population": "6.584"
+  },
+  "2504603": {
+    "name": "Conde",
+    "population": "21.400"
+  },
+  "2504702": {
+    "name": "Congo",
+    "population": "4.687"
+  },
+  "2504801": {
+    "name": "Coremas",
+    "population": "15.149"
+  },
+  "2504850": {
+    "name": "Coxixola",
+    "population": "1.771"
+  },
+  "2504900": {
+    "name": "Cruz do Espírito Santo",
+    "population": "16.257"
+  },
+  "2505006": {
+    "name": "Cubati",
+    "population": "6.866"
+  },
+  "2505105": {
+    "name": "Cuité",
+    "population": "19.978"
+  },
+  "2505238": {
+    "name": "Cuité de Mamanguape",
+    "population": "6.202"
+  },
+  "2505204": {
+    "name": "Cuitegi",
+    "population": "6.889"
+  },
+  "2505279": {
+    "name": "Curral de Cima",
+    "population": "5.209"
+  },
+  "2505303": {
+    "name": "Curral Velho",
+    "population": "2.505"
+  },
+  "2505352": {
+    "name": "Damião",
+    "population": "4.900"
+  },
+  "2505402": {
+    "name": "Desterro",
+    "population": "7.991"
+  },
+  "2505600": {
+    "name": "Diamante",
+    "population": "6.616"
+  },
+  "2505709": {
+    "name": "Dona Inês",
+    "population": "10.517"
+  },
+  "2505808": {
+    "name": "Duas Estradas",
+    "population": "3.638"
+  },
+  "2505907": {
+    "name": "Emas",
+    "population": "3.317"
+  },
+  "2506004": {
+    "name": "Esperança",
+    "population": "31.095"
+  },
+  "2506103": {
+    "name": "Fagundes",
+    "population": "11.405"
+  },
+  "2506202": {
+    "name": "Frei Martinho",
+    "population": "2.933"
+  },
+  "2506251": {
+    "name": "Gado Bravo",
+    "population": "8.376"
+  },
+  "2506301": {
+    "name": "Guarabira",
+    "population": "55.326"
+  },
+  "2506400": {
+    "name": "Gurinhém",
+    "population": "13.872"
+  },
+  "2506509": {
+    "name": "Gurjão",
+    "population": "3.159"
+  },
+  "2506608": {
+    "name": "Ibiara",
+    "population": "6.031"
+  },
+  "2502607": {
+    "name": "Igaracy",
+    "population": "6.156"
+  },
+  "2506707": {
+    "name": "Imaculada",
+    "population": "11.352"
+  },
+  "2506806": {
+    "name": "Ingá",
+    "population": "18.180"
+  },
+  "2506905": {
+    "name": "Itabaiana",
+    "population": "24.481"
+  },
+  "2507002": {
+    "name": "Itaporanga",
+    "population": "23.192"
+  },
+  "2507101": {
+    "name": "Itapororoca",
+    "population": "16.997"
+  },
+  "2507200": {
+    "name": "Itatuba",
+    "population": "10.201"
+  },
+  "2507309": {
+    "name": "Jacaraú",
+    "population": "13.942"
+  },
+  "2507408": {
+    "name": "Jericó",
+    "population": "7.538"
+  },
+  "2507507": {
+    "name": "João Pessoa",
+    "population": "723.515"
+  },
+  "2513653": {
+    "name": "Joca Claudino",
+    "population": "2.615"
+  },
+  "2507606": {
+    "name": "Juarez Távora",
+    "population": "7.459"
+  },
+  "2507705": {
+    "name": "Juazeirinho",
+    "population": "16.776"
+  },
+  "2507804": {
+    "name": "Junco do Seridó",
+    "population": "6.643"
+  },
+  "2507903": {
+    "name": "Juripiranga",
+    "population": "10.237"
+  },
+  "2508000": {
+    "name": "Juru",
+    "population": "9.826"
+  },
+  "2508109": {
+    "name": "Lagoa",
+    "population": "4.681"
+  },
+  "2508208": {
+    "name": "Lagoa de Dentro",
+    "population": "7.370"
+  },
+  "2508307": {
+    "name": "Lagoa Seca",
+    "population": "25.900"
+  },
+  "2508406": {
+    "name": "Lastro",
+    "population": "2.841"
+  },
+  "2508505": {
+    "name": "Livramento",
+    "population": "7.164"
+  },
+  "2508554": {
+    "name": "Logradouro",
+    "population": "3.942"
+  },
+  "2508604": {
+    "name": "Lucena",
+    "population": "11.730"
+  },
+  "2508703": {
+    "name": "Mãe d`Água",
+    "population": "4.019"
+  },
+  "2508802": {
+    "name": "Malta",
+    "population": "5.613"
+  },
+  "2508901": {
+    "name": "Mamanguape",
+    "population": "42.303"
+  },
+  "2509008": {
+    "name": "Manaíra",
+    "population": "10.759"
+  },
+  "2509057": {
+    "name": "Marcação",
+    "population": "7.609"
+  },
+  "2509107": {
+    "name": "Mari",
+    "population": "21.176"
+  },
+  "2509156": {
+    "name": "Marizópolis",
+    "population": "6.173"
+  },
+  "2509206": {
+    "name": "Massaranduba",
+    "population": "12.902"
+  },
+  "2509305": {
+    "name": "Mataraca",
+    "population": "7.407"
+  },
+  "2509339": {
+    "name": "Matinhas",
+    "population": "4.321"
+  },
+  "2509370": {
+    "name": "Mato Grosso",
+    "population": "2.702"
+  },
+  "2509396": {
+    "name": "Maturéia",
+    "population": "5.939"
+  },
+  "2509404": {
+    "name": "Mogeiro",
+    "population": "12.491"
+  },
+  "2509503": {
+    "name": "Montadas",
+    "population": "4.990"
+  },
+  "2509602": {
+    "name": "Monte Horebe",
+    "population": "4.508"
+  },
+  "2509701": {
+    "name": "Monteiro",
+    "population": "30.852"
+  },
+  "2509800": {
+    "name": "Mulungu",
+    "population": "9.469"
+  },
+  "2509909": {
+    "name": "Natuba",
+    "population": "10.566"
+  },
+  "2510006": {
+    "name": "Nazarezinho",
+    "population": "7.280"
+  },
+  "2510105": {
+    "name": "Nova Floresta",
+    "population": "10.533"
+  },
+  "2510204": {
+    "name": "Nova Olinda",
+    "population": "6.070"
+  },
+  "2510303": {
+    "name": "Nova Palmeira",
+    "population": "4.361"
+  },
+  "2510402": {
+    "name": "Olho d`Água",
+    "population": "6.931"
+  },
+  "2510501": {
+    "name": "Olivedos",
+    "population": "3.627"
+  },
+  "2510600": {
+    "name": "Ouro Velho",
+    "population": "2.928"
+  },
+  "2510659": {
+    "name": "Parari",
+    "population": "1.256"
+  },
+  "2510709": {
+    "name": "Passagem",
+    "population": "2.233"
+  },
+  "2510808": {
+    "name": "Patos",
+    "population": "100.674"
+  },
+  "2510907": {
+    "name": "Paulista",
+    "population": "11.788"
+  },
+  "2511004": {
+    "name": "Pedra Branca",
+    "population": "3.721"
+  },
+  "2511103": {
+    "name": "Pedra Lavrada",
+    "population": "7.475"
+  },
+  "2511202": {
+    "name": "Pedras de Fogo",
+    "population": "27.032"
+  },
+  "2512721": {
+    "name": "Pedro Régis",
+    "population": "5.765"
+  },
+  "2511301": {
+    "name": "Piancó",
+    "population": "15.465"
+  },
+  "2511400": {
+    "name": "Picuí",
+    "population": "18.222"
+  },
+  "2511509": {
+    "name": "Pilar",
+    "population": "11.191"
+  },
+  "2511608": {
+    "name": "Pilões",
+    "population": "6.978"
+  },
+  "2511707": {
+    "name": "Pilõezinhos",
+    "population": "5.155"
+  },
+  "2511806": {
+    "name": "Pirpirituba",
+    "population": "10.326"
+  },
+  "2511905": {
+    "name": "Pitimbu",
+    "population": "17.024"
+  },
+  "2512002": {
+    "name": "Pocinhos",
+    "population": "17.032"
+  },
+  "2512036": {
+    "name": "Poço Dantas",
+    "population": "3.751"
+  },
+  "2512077": {
+    "name": "Poço de José de Moura",
+    "population": "3.978"
+  },
+  "2512101": {
+    "name": "Pombal",
+    "population": "32.110"
+  },
+  "2512200": {
+    "name": "Prata",
+    "population": "3.854"
+  },
+  "2512309": {
+    "name": "Princesa Isabel",
+    "population": "21.283"
+  },
+  "2512408": {
+    "name": "Puxinanã",
+    "population": "12.923"
+  },
+  "2512507": {
+    "name": "Queimadas",
+    "population": "41.049"
+  },
+  "2512606": {
+    "name": "Quixabá",
+    "population": "1.699"
+  },
+  "2512705": {
+    "name": "Remígio",
+    "population": "17.581"
+  },
+  "2512747": {
+    "name": "Riachão",
+    "population": "3.266"
+  },
+  "2512754": {
+    "name": "Riachão do Bacamarte",
+    "population": "4.264"
+  },
+  "2512762": {
+    "name": "Riachão do Poço",
+    "population": "4.164"
+  },
+  "2512788": {
+    "name": "Riacho de Santo Antônio",
+    "population": "1.722"
+  },
+  "2512804": {
+    "name": "Riacho dos Cavalos",
+    "population": "8.314"
+  },
+  "2512903": {
+    "name": "Rio Tinto",
+    "population": "22.976"
+  },
+  "2513000": {
+    "name": "Salgadinho",
+    "population": "3.508"
+  },
+  "2513109": {
+    "name": "Salgado de São Félix",
+    "population": "11.976"
+  },
+  "2513158": {
+    "name": "Santa Cecília",
+    "population": "6.658"
+  },
+  "2513208": {
+    "name": "Santa Cruz",
+    "population": "6.471"
+  },
+  "2513307": {
+    "name": "Santa Helena",
+    "population": "5.369"
+  },
+  "2513356": {
+    "name": "Santa Inês",
+    "population": "3.539"
+  },
+  "2513406": {
+    "name": "Santa Luzia",
+    "population": "14.719"
+  },
+  "2513703": {
+    "name": "Santa Rita",
+    "population": "120.310"
+  },
+  "2513802": {
+    "name": "Santa Teresinha",
+    "population": "4.581"
+  },
+  "2513505": {
+    "name": "Santana de Mangueira",
+    "population": "5.331"
+  },
+  "2513604": {
+    "name": "Santana dos Garrotes",
+    "population": "7.266"
+  },
+  "2513851": {
+    "name": "Santo André",
+    "population": "2.638"
+  },
+  "2513927": {
+    "name": "São Bentinho",
+    "population": "4.138"
+  },
+  "2513901": {
+    "name": "São Bento",
+    "population": "30.879"
+  },
+  "2513968": {
+    "name": "São Domingos",
+    "population": "2.855"
+  },
+  "2513943": {
+    "name": "São Domingos do Cariri",
+    "population": "2.420"
+  },
+  "2513984": {
+    "name": "São Francisco",
+    "population": "3.364"
+  },
+  "2514008": {
+    "name": "São João do Cariri",
+    "population": "4.344"
+  },
+  "2500700": {
+    "name": "São João do Rio do Peixe",
+    "population": "18.201"
+  },
+  "2514107": {
+    "name": "São João do Tigre",
+    "population": "4.396"
+  },
+  "2514206": {
+    "name": "São José da Lagoa Tapada",
+    "population": "7.564"
+  },
+  "2514305": {
+    "name": "São José de Caiana",
+    "population": "6.010"
+  },
+  "2514404": {
+    "name": "São José de Espinharas",
+    "population": "4.760"
+  },
+  "2514503": {
+    "name": "São José de Piranhas",
+    "population": "19.096"
+  },
+  "2514552": {
+    "name": "São José de Princesa",
+    "population": "4.219"
+  },
+  "2514602": {
+    "name": "São José do Bonfim",
+    "population": "3.233"
+  },
+  "2514651": {
+    "name": "São José do Brejo do Cruz",
+    "population": "1.684"
+  },
+  "2514701": {
+    "name": "São José do Sabugi",
+    "population": "4.010"
+  },
+  "2514800": {
+    "name": "São José dos Cordeiros",
+    "population": "3.985"
+  },
+  "2514453": {
+    "name": "São José dos Ramos",
+    "population": "5.508"
+  },
+  "2514909": {
+    "name": "São Mamede",
+    "population": "7.748"
+  },
+  "2515005": {
+    "name": "São Miguel de Taipu",
+    "population": "6.696"
+  },
+  "2515104": {
+    "name": "São Sebastião de Lagoa de  Roça",
+    "population": "11.041"
+  },
+  "2515203": {
+    "name": "São Sebastião do Umbuzeiro",
+    "population": "3.235"
+  },
+  "2515401": {
+    "name": "São Vicente do Seridó",
+    "population": "10.230"
+  },
+  "2515302": {
+    "name": "Sapé",
+    "population": "50.143"
+  },
+  "2515500": {
+    "name": "Serra Branca",
+    "population": "12.973"
+  },
+  "2515609": {
+    "name": "Serra da Raiz",
+    "population": "3.204"
+  },
+  "2515708": {
+    "name": "Serra Grande",
+    "population": "2.975"
+  },
+  "2515807": {
+    "name": "Serra Redonda",
+    "population": "7.050"
+  },
+  "2515906": {
+    "name": "Serraria",
+    "population": "6.238"
+  },
+  "2515930": {
+    "name": "Sertãozinho",
+    "population": "4.395"
+  },
+  "2515971": {
+    "name": "Sobrado",
+    "population": "7.373"
+  },
+  "2516003": {
+    "name": "Solânea",
+    "population": "26.693"
+  },
+  "2516102": {
+    "name": "Soledade",
+    "population": "13.739"
+  },
+  "2516151": {
+    "name": "Sossêgo",
+    "population": "3.169"
+  },
+  "2516201": {
+    "name": "Sousa",
+    "population": "65.803"
+  },
+  "2516300": {
+    "name": "Sumé",
+    "population": "16.060"
+  },
+  "2516409": {
+    "name": "Tacima",
+    "population": "10.262"
+  },
+  "2516508": {
+    "name": "Taperoá",
+    "population": "14.936"
+  },
+  "2516607": {
+    "name": "Tavares",
+    "population": "14.103"
+  },
+  "2516706": {
+    "name": "Teixeira",
+    "population": "14.153"
+  },
+  "2516755": {
+    "name": "Tenório",
+    "population": "2.813"
+  },
+  "2516805": {
+    "name": "Triunfo",
+    "population": "9.220"
+  },
+  "2516904": {
+    "name": "Uiraúna",
+    "population": "14.584"
+  },
+  "2517001": {
+    "name": "Umbuzeiro",
+    "population": "9.298"
+  },
+  "2517100": {
+    "name": "Várzea",
+    "population": "2.504"
+  },
+  "2517209": {
+    "name": "Vieirópolis",
+    "population": "5.045"
+  },
+  "2505501": {
+    "name": "Vista Serrana",
+    "population": "3.512"
+  },
+  "2517407": {
+    "name": "Zabelê",
+    "population": "2.075"
+  }
+}

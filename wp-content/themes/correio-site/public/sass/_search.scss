@@ -1,0 +1,230 @@
+.search {
+  .search-divider {
+    background: url('../img/footer-background.png') bottom center repeat-x;
+
+    .search-content {
+      padding: rem(45 0 46 0);
+
+      .search-form {
+        .search-row {
+          .search-form-input {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .search-content {
+    @extend .center;
+    padding: rem(35 0);
+    text-align: center;
+    
+    .search-form {
+      .search-row {
+        @include pie-clearfix;
+      }
+
+      .search-form-input {
+        float: left;
+        border: rem(1) solid #e5e4e4;
+        background-color: #f1f1f1;
+        margin-bottom: 0;
+        padding: rem(14.5555);
+        width: rem($col-10 - 75);
+        color: #666;
+      }
+
+      .search-form-submit {
+        cursor: pointer;
+        float: right;
+        padding: 0;
+        margin: 0;
+        border: none;
+        background-color: transparent;
+        text-indent: rem(-9999);
+        @extend .sprites-search-form-icon;
+      }
+    }
+
+    .no-results {
+      img {
+        margin-bottom: rem(20);
+      }
+
+      h2 {
+        margin-bottom: rem(5);
+        text-transform: uppercase;
+        font-family: 'Uni Sans Semibold';
+        font-size: rem(22);
+      }
+
+      p {
+        font-size: rem(22);
+      }
+    }
+  }
+
+  .search-filters {
+    margin-bottom: rem(70);
+
+    .search-filters-list {
+      padding: rem(10 0);
+      border-bottom: rem(1) solid #ddd;
+
+      .search-filters-item {
+        display: inline-block;
+        margin-right: rem(15);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          display: block;
+          text-transform: uppercase;
+          text-decoration: none;
+          font-size: rem(14);
+          color: #666;
+
+          &:hover, &.active {
+            color: #ec1c47;
+          }
+        }
+      }
+    }
+  }
+
+  .search-results {
+    position: relative;
+    margin-bottom: rem(70);
+
+    .search-widget {
+      @include border-radius(rem(8));
+      border: rem(1) solid #e5e4e4;
+      background: #fafafa;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: rem(260);
+      height: rem(200);
+      text-align: center;
+
+      .logo-wrap {
+        @extend .center;
+        @include border-radius(rem(9999));
+        position: relative;
+        margin-bottom: rem(20);
+        width: rem(87);
+        height: rem(87);
+        border: rem(3) solid #eae9e9;
+
+        .border, .logo {
+          position: absolute;
+          @include border-radius(rem(9999));
+          display: block;
+        }
+
+        .border {
+          z-index: 1;
+          top: rem(2);
+          left: rem(2);
+          height: rem(2);
+          border: rem(1) solid #666;
+          width: rem(77);
+          height: rem(77);
+        }
+
+        .logo { //img
+          z-index: 0;
+          width: rem(81);
+          height: rem(81);
+        }
+      }
+
+      .title {
+        margin-bottom: rem(3);
+        text-transform: uppercase;
+        font-family: 'Uni Sans Semibold';
+        font-size: rem(18);
+      }
+
+      .description {
+        font-family: 'Uni Sans Light';
+        font-size: rem(14);
+
+        a {
+          text-decoration: underline;
+          color: #666;
+        }
+      }
+    }
+
+    .search-result {
+      margin-bottom: rem(50);
+      max-width: rem(550);
+
+      .search-result-head {
+        margin-bottom: rem(15);
+
+        .search-result-title {
+          margin-bottom: rem(5);
+          text-transform: uppercase;
+          font-family: 'Uni Sans Semibold';
+          font-size: rem(16);
+
+          a {
+            color: #666;
+          }
+        }
+
+        .search-result-info {
+          font-size: rem(14);
+
+          .search-result-category {
+            margin-right: rem(5);
+            display: inline-block;
+            color: #666;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+
+          .search-result-time {
+            border-left: rem(1) solid #747474;
+            padding-left: rem(5);
+            display: inline-block;
+          }
+        }
+      }
+
+      .search-result-body {
+        @include pie-clearfix;
+
+        .search-result-thumb {
+          float: left;
+          width: rem(165);
+          height: rem(120);
+
+          img {
+            display: block;
+            width: inherit;
+            height: inherit;
+          }
+        }
+
+        .search-result-description {
+          float: right;
+          width: rem(550 - 20 - 165);
+          line-height: rem(19);
+          font-size: rem(14);
+
+          a {
+            color: #666;
+          }
+        }
+      }
+    }
+  }
+}

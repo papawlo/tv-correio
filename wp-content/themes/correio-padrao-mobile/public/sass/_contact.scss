@@ -1,0 +1,65 @@
+.contact {
+  .contact-content {
+    @include pie-clearfix;
+    padding: rem(100 0);
+
+    .title {
+      max-width: rem(500);
+      margin-bottom: rem($space-vert);
+      text-transform: uppercase;
+      line-height: rem(51);
+      font-family: 'Uni Sans Light';
+      font-size: rem(46);
+    }
+
+    .contact-form {
+      float: left;
+      width: rem(550);
+    }
+
+    .contact-map {
+      margin-top: rem(20);
+      float: right;
+      width: rem(502);
+
+      .map {
+        margin-bottom: rem(40);
+        width: rem(502);
+        height: rem(407);
+      }
+
+      .info {
+        .icon-wrap {
+          .icon {
+            display: block;
+          }
+
+          &.place {
+            width: rem(50);
+            height: rem(73);
+
+            .icon {
+              @extend .sprites-icon-place;
+            }
+          }
+
+          &.phone {
+            width: rem(44);
+            height: rem(73);
+
+            .icon {
+              @extend .sprites-icon-phone;
+            }
+          }
+        }
+
+        .content-wrap {
+          padding-left: rem(15);
+          line-height: rem(23);
+          font-family: 'Uni Sans Light';
+          font-size: rem(18);
+        }
+      }
+    }
+  }
+}

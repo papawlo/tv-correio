@@ -1,0 +1,164 @@
+.programation {
+  padding-top: rem(30);
+
+  .programation-content {
+    width: 100%;
+
+    .programation-head {
+      padding: rem(0 15 20 15);
+      border-bottom: rem(1) solid #ddd;
+      margin-bottom: rem(20);
+
+      .programation-title {
+        @include border-radius(rem(9999));
+        margin-bottom: rem(20);
+        padding: rem(15 0);
+        background: #edb021;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Uni Sans Light';
+        font-size: rem(20);
+        color: #fff;
+      }
+
+      .v-time {
+        padding: rem(0 30);
+      }
+
+      .programation-time {
+        text-transform: uppercase;
+        font-family: 'Uni Sans Light';
+        font-size: rem(20);
+
+        b {
+          text-transform: capitalize;
+          font-family: 'Uni Sans Semibold';
+          font-size: rem(26);
+        }
+      }
+
+      .v-nav {
+        width: rem(48 + 48);
+      }
+
+      .programation-nav {
+        width: rem(48 + 48);
+
+        .programation-nav-link {
+          float: left;
+          display: block;
+          width: rem(48);
+          height: rem(40);
+
+          .icon {
+            @extend .center;
+            position: relative;
+            top: rem(10);
+            display: block;
+            width: rem(10);
+            height: rem(20);
+
+            img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          &.prev {
+            @include background-image(linear-gradient(to left, #e3e3e3, #ededed));
+            @include border-radius(rem(9999 0 0 9999));
+
+            &:hover {
+              @include background-image(linear-gradient(to left, #d4d4d4 30%, #ededed));
+            }
+          }
+
+          &.next {
+            @include background-image(linear-gradient(to right, #e3e3e3, #ededed));
+            @include border-radius(rem(0 9999 9999 0));
+
+            &:hover {
+              @include background-image(linear-gradient(to right, #d4d4d4 30%, #ededed));
+            }
+          }
+        }
+      }
+    }
+
+    .programation-body {
+      .program {
+        padding: rem(0 15);
+        border-bottom: rem(1) solid #ddd;
+        margin-bottom: rem(20);
+        padding-bottom: rem(20);
+
+        &:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+        
+        .program-hour {
+          float: right;
+          padding: rem(5 15);
+          font-family: 'Uni Sans Light';
+          font-size: rem(18);
+        }
+
+        .program-wrap {
+          position: relative;
+          clear: both;
+
+          .program-logo {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            top: rem((145 - 82) / 2);
+            
+            .program-logo-wrap {
+              @include border-radius(rem(9999));
+              display: block;
+              border: rem(3) solid #eae9e9;
+              position: relative;
+              width: rem(82);
+              height: rem(82);
+
+              .border {
+                @include border-radius(rem(9999));
+                position: absolute;
+                border: rem(1) solid #eae9e9;
+                top: rem(1);
+                left: rem(1);
+                z-index: 1;
+                width: rem(74);
+                height: rem(74);
+              }
+
+              .image {
+                @include border-radius(rem(9999));
+                display: block;
+                position: relative;
+                z-index: 0;
+              }
+            }
+          }
+
+          .program-thumb {
+            position: relative;
+            z-index: 0;
+            left: rem(56);
+            display: block;
+            @include border-radius(rem(5));
+            width: rem(234);
+
+            .image {
+              display: block;
+              @include border-radius(rem(5));
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,389 @@
+$comercial-slides-height: 499;
+
+.comercial {
+  .comercial-slides {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: rem($comercial-slides-height);
+
+    .comercial-slides-nav  {
+      @include opacity(0.6);
+      top: rem(216);
+      z-index: 1;
+      position: absolute;
+      display: block;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background: none;
+      
+      .icon {
+        display: block;
+      }
+
+      &:hover {
+        @include opacity(1);
+      }
+
+      &.prev {
+        left: 5.9%;
+
+        .icon {
+          @extend .sprites-comercial-slides-nav-prev;
+        }
+      }
+
+      &.next {
+        right: 5.9%;
+
+        .icon {
+          @extend .sprites-comercial-slides-nav-next;
+        }
+      }
+    }
+
+    .comercial-slides-wrap {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      height: rem($comercial-slides-height);
+
+      .slide { //img
+        display: block;
+        position: absolute;
+        height: rem($comercial-slides-height);
+      }
+    }
+  }
+
+  .comercial-signin {
+    @include background-image(linear-gradient(to top, #e5e5e5, #f2f2f2));
+    position: relative;
+
+    .signin-form {
+      @include pie-clearfix;
+      padding: rem(20 0);
+
+      .signin-col {
+        float: left;
+        margin-right: rem($space-horz);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .signin-row {
+          margin-bottom: rem(5);
+
+          &.link {
+            text-align: right;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .signin-title {
+            margin-top: rem(9);
+            text-transform: capitalize;
+            font-family: 'Uni Sans Light';
+            font-size: rem(26);
+
+            .icon {
+              @extend .sprites-signin-title-icon;
+              display: inline-block;
+              margin-right: rem(4);
+            }
+          }
+
+          .signin-input {
+            display: block;
+            border: rem(1) solid #e5e4e4;
+            width: rem(400);
+            padding: rem(10 14);
+            @include border-radius(rem(5));
+            text-transform: uppercase;
+            font-family: 'Uni Sans Semibold';
+            font-size: rem(16);
+            color: #aaa;
+            background: #fafafa;
+          }
+
+          .signin-link {
+            text-decoration: underline;
+            font-family: 'Uni Sans Light';
+            font-size: rem(18);
+            color: #666;
+          }
+
+          .signin-submit {
+            display: block;
+            padding: 0;
+            margin: 0;
+            cursor: pointer;
+            border: none;
+            background: none;
+
+            .icon {
+              display: block;
+              @extend .sprites-signin-submit-icon;
+            }
+          }
+        }
+      }
+    }
+
+    .signin-alert {
+      display: none;
+      position: absolute;
+      bottom: rem(-66);
+      background: #f1f1f1;
+      width: 100%;
+      height: rem(66);
+
+      .alert-icon {
+        width: rem(30);
+
+        .icon-wrap {
+          border-right: rem(1) solid #666;
+          padding-right: rem(20);
+          width: rem(50);
+          height: rem(30);
+
+          .icon {
+            display: block;
+            @extend .sprites-signin-alert-icon;
+          }
+        }
+      }
+
+      .alert-label {
+        padding-left: rem(20);
+      }
+
+      .alert-close {
+        .close-button {
+          display: block;
+          cursor: pointer;
+          margin: 0;
+          padding: 0;
+          border: none;
+          background: none;
+
+          .close-icon {
+            display: block;
+            @extend .sprites-signin-alert-close;
+          }
+        }
+      }
+    }
+
+    .signup-form {
+      display: none;
+      @include box-shadow(rem(0 5 5) rgba(0, 0, 0, 0.1));
+      top: rem(106);
+      position: absolute;
+      padding: rem(40 0);
+      background: #f1f1f1;
+      width: 100%;
+      height: auto;
+
+      .signup-head {
+        position: relative;
+
+        .signup-close {
+          background-color: transparent;
+          @extend .sprites-signup-form-close;
+          display: block;
+          margin: 0;
+          padding: 0;
+          border: none;
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      .signup-body {
+        @include pie-clearfix;
+        margin-bottom: rem(20);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .signup-col {
+          float: left;
+          margin-right: rem(20);
+          width: rem(365);
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .signup-row {
+            @include pie-clearfix;
+            margin-bottom: rem(20);
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
+      .signup-title {
+        margin-bottom: rem(20);
+        font-family: 'Uni Sans Semibold';
+        font-size: rem(32);
+      }
+
+      .signup-subtitle {
+        padding-bottom: rem(10);
+        margin-bottom: rem(20);
+        border-bottom: rem(2) solid #e8e9e8;
+        font-family: 'Uni Sans Light';
+        font-size: rem(22);
+      }
+      
+      .signup-label {
+        display: block;
+        margin-bottom: rem(5);
+        text-transform: uppercase;
+        letter-spacing: rem(0);
+        font-family: 'Uni Sans Semibold';
+        font-size: rem(14);
+        color: #aaa;
+      }
+
+      .signup-input {
+        display: block;
+        border: rem(1) solid #e5e4e4;
+        width: 100%;
+        padding: rem(10 14);
+        @include border-radius(rem(5));
+        font-family: 'Uni Sans Light';
+        font-size: rem(16);
+        color: #aaa;
+        background: #fafafa;
+      }
+
+      .signup-submit {
+        float: right;
+        @include border-radius(rem(9999));
+        @include box-shadow(rem(1 1 1) rgba(0, 0, 0, 0.1));
+        margin: 0;
+        display: block;
+        cursor: pointer;
+        padding: rem(10 50);
+        border: none;
+        text-transform: uppercase;
+        font-size: rem(14);
+        background: #fafafa;
+        color: #aaa;
+      }
+
+    }
+
+    .signin-border {
+      background: url('../img/footer-background.png') center center repeat-x;
+      width: 100%;
+      height: rem(1);
+    }
+  }
+
+  .comercial-advantages {
+    padding: rem(100 0);
+    text-align: center;
+
+    .comercial-advantages-description {
+      margin-bottom: rem(60);
+      line-height: rem(37);
+      font-family: 'Uni Sans Light';
+      font-size: rem(32);
+    }
+
+    .comercial-advantages-list {
+      @include pie-clearfix;
+
+      .comercial-advantages-item {
+        float: left;
+        margin-right: rem(20);
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .card {
+          @include border-radius(rem(8));
+          border-bottom: rem(6) solid #b9b9b9;
+          background: #f1f1f1;
+          width: rem(270);
+          height: rem(265);
+
+          .card-icon {
+            
+          }
+
+          .card-description {
+            margin-bottom: rem(20);
+            line-height: rem(40);
+            font-family: 'Uni Sans Light';
+            font-size: rem(30);
+          }
+        }
+      }
+    }
+  }
+
+  .comercial-map {
+    margin-bottom: rem(80);
+  }
+
+  .comercial-video {
+    margin-bottom: rem(80);
+
+    $video-link-width: 1140;
+    $video-link-height: 450;
+    $video-icon-width: 130;
+    $video-icon-height: 130;
+
+    .video-link {
+      position: relative;
+      display: block;
+      width: rem($video-link-width);
+      height: rem($video-link-height);
+
+      .icon-wrap, .thumb {
+        position: absolute;
+        display: block;
+      }
+
+      .icon-wrap {
+        z-index: 1;
+        top: rem(($video-link-height - $video-icon-height) / 2);
+        left: rem(($video-link-width - $video-icon-width) / 2);
+        width: rem($video-icon-width);
+        height: rem($video-icon-height);
+
+        .icon {
+          @include opacity(0.8);
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .thumb {
+        z-index: 0;
+        @include border-radius(rem(10));
+      }
+    }
+  }
+
+  .comercial-programs {
+    margin-bottom: rem(80);
+  }
+}

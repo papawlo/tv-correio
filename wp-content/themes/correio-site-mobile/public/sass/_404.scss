@@ -1,0 +1,14 @@
+.p404 {
+  .content-404 {
+    padding: rem(30 0);
+    background: url('../img/404.gif');
+    width: 100%;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      max-width: rem(290);
+      height: auto;
+    }
+  }
+}

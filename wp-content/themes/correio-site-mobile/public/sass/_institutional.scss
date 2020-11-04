@@ -1,0 +1,142 @@
+.institutional {
+
+  .institutional-content {
+    padding: rem(30 15);
+    background: #f7f7f7;
+    text-align: left;
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: rem(20);
+      line-height: rem(29);
+      font-family: 'Uni Sans Semibold';
+      font-size: rem(24);
+    }
+
+    p {
+      margin-bottom: rem(20);
+      line-height: rem(23);
+      font-size: rem(18);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .institutional-pannel {
+    margin-bottom: rem(30);
+    position: relative;
+    padding: rem(30 15);
+    background: url('../img/pannel-institutional.jpg') top center repeat-x;
+    width: 100%;
+    height: auto;
+
+    .pannel-border {
+      position: absolute;
+      left: 0;
+      background: url('../img/footer-background.png');
+      width: 100%;
+      height: rem(1);
+
+      &.top {
+        top: 0;
+      }
+
+      &.bottom {
+        bottom: 0;
+      }
+    }
+
+    .pannel-wrap {
+      position: relative;
+
+      .title {
+        margin-bottom: rem(30);
+        text-align: center;
+        letter-spacing: rem(-1);
+        font-family: 'Uni Sans Semibold';
+        font-size: rem(24);
+      }
+
+      .content {
+        .hour {
+          @include pie-clearfix;
+          position: relative;
+          width: 100%;
+
+          .icon {
+            @extend .center;
+            display: block;
+            width: rem(61);
+            height: rem(45);
+
+            img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
+
+          .label {
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Uni Sans Bold';
+
+            .h, .l {
+              display: block;
+            }
+
+            .h {
+              font-size: rem(76);
+            }
+
+            .l {
+              font-size: rem(27);
+            }
+          }
+
+          .value {
+            position: relative;
+            top: rem(5);
+            padding-left: rem(15);
+            font-size: rem(20);
+          }
+
+          &.increase {
+            .icon {
+              margin-bottom: rem(30);
+            }
+
+            .label {
+              color: #ec1c47;
+            }
+
+            .value {
+              strong, b {
+                color: #ec1c47;
+              }
+            }
+          }
+
+          &.decrease {
+            .icon {
+              margin-top: rem(30);
+            }
+          }
+        }
+
+        .icon {
+          margin: rem(30 auto);
+          width: rem(79);
+          height: rem(79);
+
+          img {
+            display: block;
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

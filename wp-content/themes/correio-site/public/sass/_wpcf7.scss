@@ -1,0 +1,9 @@
+.lt-form {
+	.lt-form-row {
+		.lt-form-input {
+			&.wpcf7-not-valid {
+				border-color: #ff9c9c;
+			}
+		}
+	}
+}

@@ -1,0 +1,4 @@
+@import "compass/utilities/sprites";
+
+@import "sprites/*.png";
+@include all-sprites-sprites(true); // true parameter using for dimensions

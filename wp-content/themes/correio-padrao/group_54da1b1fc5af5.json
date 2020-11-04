@@ -1,0 +1,141 @@
+{
+    "key": "group_54da1b1fc5af5",
+    "title": "Receitas",
+    "fields": [
+        {
+            "key": "field_54da1b8c56eef",
+            "label": "Tempo de preparo",
+            "name": "receitas_tempo",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Ex.: 1h35min",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54da1bb356ef0",
+            "label": "Rendimento",
+            "name": "receitas_rendimento",
+            "prefix": "",
+            "type": "text",
+            "instructions": "Ex.: 10 por\u00e7\u00f5es",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": 50,
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
+        },
+        {
+            "key": "field_54da1bfb56ef1",
+            "label": "Ingredientes",
+            "name": "receitas_ingredientes",
+            "prefix": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": 1,
+            "max": "",
+            "layout": "block",
+            "button_label": "Adicionar Ingrediente",
+            "sub_fields": [
+                {
+                    "key": "field_54da1c1956ef2",
+                    "label": "Ingrediente",
+                    "name": "receitas_ingredientes_ingrediente",
+                    "prefix": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": "",
+                    "readonly": 0,
+                    "disabled": 0
+                }
+            ]
+        },
+        {
+            "key": "field_54da1b6356eee",
+            "label": "Fotos",
+            "name": "receitas_fotos",
+            "prefix": "",
+            "type": "gallery",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "min": "",
+            "max": "",
+            "preview_size": "thumbnail",
+            "library": "uploadedTo"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "receita"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "custom_fields",
+        "discussion",
+        "comments",
+        "revisions",
+        "author",
+        "format",
+        "page_attributes",
+        "categories",
+        "tags",
+        "send-trackbacks"
+    ],
+    "local": "json",
+    "modified": 1423593733
+}

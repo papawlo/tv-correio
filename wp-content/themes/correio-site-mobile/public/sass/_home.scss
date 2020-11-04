@@ -1,0 +1,121 @@
+.home {
+
+  .home-pannel {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    position: relative;
+
+    .home-pannel-slides {
+      @extend .center;
+      position: relative;
+      //width: rem(375);
+      height: rem(270);
+      width: 100%;
+
+      .slide {
+        float: left;      
+        position: absolute;
+        /*position: absolute;*/     
+        display: none;
+        /*  display: none;*/      
+        width: 23.4375rem;
+        /*width: 23.4375rem;*/    
+        width: 100%;    
+        height: 270px;    
+        display: block;   
+        background-position: center center;   
+        background-size: cover;
+
+        img {
+          display: block;
+          width: rem(375);
+          height: rem(270);
+        }
+      }
+    }
+
+    .home-pannel-thumbs {
+      overflow-x: hidden;
+      padding: rem(15);
+      background: url('../img/home-pannel-background.png');
+      width: 100%;
+      max-width: 100%;
+
+      .home-pannel-thumbs-list {
+        @include pie-clearfix;
+        position: relative;
+
+        .home-pannel-thumbs-item {
+          float: left;
+          margin-right: rem(15);
+
+          &:last-child {
+            margin-right: 0;
+          }
+          
+          .thumb {
+            @include border-radius(rem(9999));
+            position: relative;
+            display: block;
+            border: rem(4) solid #eae9e9;
+            width: rem(128);
+            height: rem(128);
+
+            .border {
+              @include border-radius(rem(9999));
+              position: absolute;
+              z-index: 1;
+              top: rem(2);
+              left: rem(2);
+              border: rem(1) solid #eae9e9;
+              width: rem(116);
+              height: rem(116);
+            }
+
+            img {
+              @include border-radius(rem(9999));
+              position: relative;
+              z-index: 0;
+              display: block;
+              width: rem(120);
+              height: rem(120);
+            }
+          }
+        }
+      }
+
+    }
+  }
+  
+}
+
+.home .home-pannel .prev, .home .home-pannel .next {    
+  position: absolute;   
+  top: 50%;   
+  width: 39px;    
+  height: 67px;   
+  margin-top: -33.5px;    
+  background: url("../img/seta-slideshow.png");   
+  z-index: 100;   
+}   
+.home .home-pannel .prev {    
+  left: 20px;   
+  -webkit-transform: rotate(180deg);    
+  -moz-transform: rotate(180deg);   
+  -o-transform: rotate(180deg);   
+  -ms-transform: rotate(180deg);    
+  transform: rotate(180deg);    
+}   
+.home .home-pannel .next {    
+  right: 20px;    
+}
+.home .home-pannel .home-pannel-thumbs { 
+  overflow-x: hidden; 
+  padding: 0.9375rem;          
+  background: url("../img/home-pannel-background.png");
+  width: 100%;       
+  max-width: 100%;
+  /* margin-top:-20px;*/   
+}
